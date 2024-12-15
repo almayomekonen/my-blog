@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ContactForm.module.css";
-import Notification from "../ui/Notification";
+import Notification from "../ui/Notification.jsx";
 import { useRouter } from "next/navigation";
 
 async function sendContactData(contactDetails) {
