@@ -1,7 +1,7 @@
 .content {
   width: 95%;
   max-width: 60rem;
-  margin: var(--size-8) auto;
+  margin: var(--size-30) auto;
   font-size: var(--size-5);
   line-height: var(--size-8);
   background-color: var(--color-grey-100);

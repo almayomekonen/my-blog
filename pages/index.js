@@ -9,7 +9,7 @@ export default function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Welcome to my Blog!📚</title>
+        <title>לומדים בכיף - הבלוג שלך לתכנות 📚</title>
         <meta
           name="description"
           content="I post about programming and web development."

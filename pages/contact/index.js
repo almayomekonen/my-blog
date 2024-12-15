@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <Fragment>
       <Head>
-        <title>Contact Me</title>
+        <title>השאירו פידבק ☺️</title>
         <meta name="description" content="Send me your messages!" />
       </Head>
       <ContactForm />

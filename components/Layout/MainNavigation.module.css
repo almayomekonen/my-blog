@@ -1,4 +1,8 @@
+/* General Header Styling */
 .header {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
   width: 100%;
   height: 6rem;
   background-color: hsl(300deg 7.61% 14.06%);
@@ -23,7 +27,7 @@
 
 .header a {
   color: var(--color-grey-100);
-  font-size: var(--size-4);
+  font-size: var(--size-6);
 }
 
 .header a:hover,
@@ -32,12 +36,115 @@
   color: var(--color-grey-200);
 }
 
-@media (min-width: 768px) {
+/* Hamburger */
+.header .hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.header .hamburger div {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: var(--color-grey-100);
+  border-radius: 0.1rem;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 900;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Side Drawer */
+.sideDrawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: hsl(300deg 7.61% 14.06%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  z-index: 1001;
+  transition: right 0.3s ease;
+}
+
+.sideDrawer.show {
+  right: 0;
+}
+
+.sideDrawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sideDrawer li {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: left;
+}
+
+.sideDrawer li a {
+  display: block;
+  width: 100%;
+  color: var(--color-grey-100);
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sideDrawer li a:hover,
+.sideDrawer li a:active {
+  background-color: hsl(300, 19%, 86%);
+  color: var(--color-grey-900);
+}
+
+/* Responsive Styling */
+@media (max-width: 785px) {
   .header ul {
-    gap: 0.5rem;
+    display: none;
   }
 
-  .header a {
-    font-size: var(--size-5);
+  .header ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    right: 10%;
+    background-color: hsl(300, 19%, 86%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .header .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 786px) {
+  .header ul {
+    display: flex;
   }
 }

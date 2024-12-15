@@ -7,7 +7,7 @@ export default function AllPostsPage(props) {
   return (
     <Fragment>
       <Head>
-        <title>All My Posts</title>
+        <title>כל מה שצריך לדעת על תכנות - המאמרים שלי 📖 </title>
         <meta
           name="decription"
           content="A list of all programming-related posts!"

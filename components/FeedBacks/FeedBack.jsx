@@ -33,7 +33,9 @@ export default function FeedBack() {
 
   return (
     <div className={styles.feedback}>
-      <h1>Feedback Messages</h1>
+      <h1>
+        חוות דעת של תלמידים וסטודנטים מתעניינים <strong>🗣️💬</strong>
+      </h1>
       <ul className={styles.list}>
         {messages.map((message) => (
           <li key={message._id} className={styles.message}>
