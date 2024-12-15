@@ -1,4 +1,4 @@
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layout/Layout.jsx";
 import Head from "next/head";
 import "../styles/globals.css";
 

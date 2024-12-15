@@ -91,7 +91,7 @@ export default function ContactForm() {
     notification = {
       status: "success",
       title: "תודה על השיתוף!",
-      message: "ההודעה נשלחה בהצלחה",
+      message: "המשוב התבקבל בהצלחה",
     };
   }
   if (requestStatus === "error") {
