@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ContactForm.module.css";
-import Notification from "../ui/Notification.jsx";
 import { useRouter } from "next/navigation";
+import Notification from "../ui/Notification";
 
 async function sendContactData(contactDetails) {
   const response = await fetch("/api/contact", {
