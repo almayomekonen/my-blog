@@ -1,16 +1,12 @@
 const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
 module.exports = (phase) => {
-  const envConfig = {
-    mongodb_username: process.env.MONGODB_USERNAME,
-    mongodb_password: process.env.MONGODB_PASSWORD,
-    mongodb_clustername: process.env.MONGODB_CLUSTERNAME,
-  };
-
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       env: {
-        ...envConfig,
+        mongodb_username: "almayo",
+        mongodb_password: "7Io7qZCy4UCs4jpj",
+        mongodb_clustername: "cluster0",
         mongodb_database: "web-development-blog-dev",
       },
     };
@@ -18,6 +14,9 @@ module.exports = (phase) => {
 
   return {
     env: {
+      mongodb_username: "almayo",
+      mongodb_password: "7Io7qZCy4UCs4jpj",
+      mongodb_clustername: "cluster0",
       ...envConfig,
       mongodb_database: "web-development-blog",
     },
