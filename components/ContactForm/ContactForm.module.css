@@ -1,7 +1,7 @@
 .contact {
   margin: var(--size-30) auto;
   border-radius: 6px;
-  background-color: var(--color-grey-100);
+  background-color: var(--bgc-gradient-1500);
   width: 90%;
   max-width: 50rem;
   padding: var(--size-4);
@@ -11,15 +11,21 @@
 
 .contact h1 {
   font-size: var(--size-8);
+  color: hsl(253, 22%, 67%);
   margin: var(--size-4) 0;
-  text-align: left;
   margin-bottom: 3rem;
+}
+
+.teacherIcons {
+  display: inline-block;
+  animation: pulseIcons 1.5s ease-in-out infinite;
 }
 
 .form label {
   display: block;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+  color: hsl(254, 22%, 67%);
   margin: var(--size-2) 0 var(--size-1) 0;
 }
 
@@ -30,7 +36,7 @@
   border-radius: 4px;
   width: 100%;
   border: 1px solid var(--color-grey-400);
-  background-color: var(--color-grey-50);
+  background-color: rgb(227, 220, 220);
   resize: none;
 }
 
@@ -66,9 +72,22 @@
   border-color: var(--color-primary-500);
 }
 
-@media (min-width: 768px) {
+/* media query */
+@media (max-width: 768px) {
   .contact h1 {
-    font-size: var(--size-10);
-    text-align: center;
+    font-size: var(--size-7);
+  }
+}
+
+/* keyframes */
+@keyframes pulseIcons {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
   }
 }

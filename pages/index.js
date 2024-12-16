@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "../components/Home-Page/Hero";
 import FeaturedPosts from "../components/Home-Page/FeaturedPosts";
 import { getFeaturedPosts } from "../lib/posts-util";
+import Social from "../components/Social/Social";
 
 export default function HomePage(props) {
   return (
@@ -17,6 +18,7 @@ export default function HomePage(props) {
       </Head>
       <Hero />
       <FeaturedPosts posts={props.posts} />
+      <Social />
     </Fragment>
   );
 }

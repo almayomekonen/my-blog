@@ -3,7 +3,7 @@ title: 'התחלה עם NextJS'
 date: '2022-10-16'
 image: getting-started-nextjs.png
 excerpt: NextJS הוא פריימוורק ל-React שמפשט את יצירת אפליקציות אתרים, ומגיע עם יכולת רינדור צד שרת מובנה.
-isFeatured: true
+isFeatured: false
 ---
 
 NextJS הוא **פריימוורק** שנבנה על גבי **ReactJS**.

@@ -25,7 +25,7 @@ export default function MainNavigation() {
         </div>
         <ul className={`${isNavVisible ? styles.show : ""}`}>
           <li>
-            <Link href="/posts">פוסטים</Link>
+            <Link href="/posts">כל המאמרים</Link>
           </li>
           <li>
             <Link href="/contact">השאירו פידבק</Link>
@@ -40,25 +40,40 @@ export default function MainNavigation() {
         onClick={toggleNav}
       />
       <nav
-        className={`${styles.sideDrawer} ${isNavVisible ? styles.show : ""}`}
+        className={
+          `${styles.sideDrawer} ${isNavVisible ? styles.show : ""}` || (
+            <Link href="/" legacyBehavior>
+              <a>
+                <Logo />
+              </a>
+            </Link>
+          )
+        }
       >
-        <ul>
-          <li>
-            <Link href="/posts" onClick={toggleNav}>
-              פוסטים
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" onClick={toggleNav}>
-              השאירו פידבק
-            </Link>
-          </li>
-          <li>
-            <Link href="/feedbacks" onClick={toggleNav}>
-              כל הפידבקים
-            </Link>
-          </li>
-        </ul>
+        <>
+          <Link href="/" legacyBehavior>
+            <a>
+              <Logo />
+            </a>
+          </Link>
+          <ul>
+            <li>
+              <Link href="/posts" onClick={toggleNav}>
+                פוסטים
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={toggleNav}>
+                השאירו פידבק
+              </Link>
+            </li>
+            <li>
+              <Link href="/feedbacks" onClick={toggleNav}>
+                כל הפידבקים
+              </Link>
+            </li>
+          </ul>
+        </>
       </nav>
     </>
   );

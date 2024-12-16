@@ -1,15 +1,13 @@
 /* General Header Styling */
 .header {
   top: 0;
-  position: fixed;
-  z-index: 1000;
   width: 100%;
   height: 6rem;
-  background-color: hsl(300deg 7.61% 14.06%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 1%;
+  box-shadow: rgb(18, 20, 49) 0px 20px 30px -10px;
 }
 
 .header ul {
@@ -36,7 +34,6 @@
   color: var(--color-grey-200);
 }
 
-/* Hamburger */
 .header .hamburger {
   display: none;
   flex-direction: column;
@@ -51,7 +48,6 @@
   border-radius: 0.1rem;
 }
 
-/* Overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -70,17 +66,15 @@
   visibility: visible;
 }
 
-/* Side Drawer */
 .sideDrawer {
   position: fixed;
-  top: 64px;
+  top: 0;
   right: -100%;
   width: 250px;
   height: 100%;
   background-color: hsl(300deg 7.61% 14.06%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   padding: 1rem;
   z-index: 1001;
@@ -122,7 +116,6 @@
   color: var(--color-grey-900);
 }
 
-/* Responsive Styling */
 @media (max-width: 785px) {
   .header ul {
     display: none;
@@ -130,6 +123,19 @@
 
   .header .hamburger {
     display: flex;
+  }
+
+  .header .hamburger div {
+    width: 2.5rem;
+    height: 0.3rem;
+  }
+
+  .header {
+    padding: 0 3%;
+  }
+
+  .sideDrawer ul {
+    margin-top: 2.5rem;
   }
 }
 

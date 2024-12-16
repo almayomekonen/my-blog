@@ -33,20 +33,19 @@ export default function FeedBack() {
 
   return (
     <div className={styles.feedback}>
-      <h1>
-        חוות דעת של תלמידים וסטודנטים מתעניינים <strong>🗣️💬</strong>
-      </h1>
       <ul className={styles.list}>
         {messages.map((message) => (
           <li key={message._id} className={styles.message}>
-            <h3>שם: {message.name}</h3>
-            <p className="favorite-topic">
-              נושא מועדף:
-              <span style={{ color: "#191970" }}> {message.favoriteTopic}</span>
+            <span className={styles.userLetter}>
+              {message.name.charAt(0).toUpperCase()}
+            </span>
+            <p className={styles.text}>
+              <span className={styles.quote}>“</span>
+              {message.message}
             </p>
-            <p className="message">
-              הודעה:
-              <span style={{ color: "#191970" }}> {message.message}</span>
+            <p className={styles.author}>
+              {`${message.name} — `}
+              <span className={styles.topic}>({message.favoriteTopic})</span>
             </p>
           </li>
         ))}

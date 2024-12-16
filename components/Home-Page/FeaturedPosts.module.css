@@ -2,11 +2,12 @@
   width: 90%;
   max-width: 80rem;
   margin: var(--size-8) auto;
+  margin-bottom: var(--size-40);
 }
 
 .latest h2 {
   font-size: var(--size-8);
-  color: var(--color-grey-800);
+  color: var(--color-grey-50);
   text-align: center;
 }
 

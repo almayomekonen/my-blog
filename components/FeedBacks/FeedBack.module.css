@@ -1,37 +1,72 @@
 .feedback {
-  padding: 2rem;
-  max-width: 600px;
+  padding: var(--size-20) var(--size-4);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
   margin: 0 auto;
-}
-.feedback h1 {
   text-align: center;
 }
+
 .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
   margin: 0 auto;
-}
-.message {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  background-color: #f9f9f9;
   list-style: none;
+  padding: 0;
 }
 
-.message h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
-}
-
-.message p {
-  margin: 0;
-  font-size: 1rem;
-  color: #555;
-}
-
-.favorite-topic {
-  font-weight: bold;
-}
 .message {
+  background: #1d0f34;
+  border-radius: 10px;
+  padding: var(--size-6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.userLetter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #5a097a;
+  font-size: 1.8rem;
   font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 2px solid #5a097a;
+  margin-bottom: var(--size-6);
+}
+
+.quote {
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  color: #5a097a;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.5;
+  color: #d9d9d9;
+}
+
+.author {
+  font-size: 1rem;
+  margin-top: var(--size-4);
+  color: #fff;
+}
+
+.topic {
+  font-size: 0.9rem;
+  color: #c8b3ce;
 }

@@ -104,10 +104,13 @@ export default function ContactForm() {
 
   return (
     <section className={styles.contact}>
-      <h1>
-        מה למדת היום?
-        <br /> שתף את המחשבות שלך!
-      </h1>
+      <div className={styles.subContact}>
+        <h1>
+          מה למדתם היום? <span className={styles.teacherIcons}> 💻 💡 🧠</span>
+          <br />
+          שתפו את המחשבות שלכם!
+        </h1>
+      </div>
 
       <form onSubmit={sendMessageHandler} className={styles.form}>
         <div className={styles.controls}>

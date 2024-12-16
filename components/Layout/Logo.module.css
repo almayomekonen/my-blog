@@ -1,20 +1,19 @@
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-transform: uppercase;
-  font-size: var(--size-5);
+  font-size: var(--size-6);
   font-weight: bold;
   color: var(--color-grey-50);
+  cursor: pointer;
 }
 .logo img {
   width: 200px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 508px) {
   .logo {
-    font-size: var(--size-8);
-  }
-}
-@media (min-width: 668px) {
-  .logo {
-    font-size: var(--size-8);
+    font-size: var(--size-6);
   }
 }

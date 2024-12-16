@@ -1,12 +1,12 @@
 .posts {
   width: 90%;
   max-width: 60rem;
-  margin: var(--size-30) auto;
+  margin: 0 auto;
 }
 
 .posts h1 {
   font-size: var(--size-8);
-  color: var(--color-grey-800);
+  color: var(--color-grey-50);
   text-align: center;
 }
 
