@@ -10,11 +10,15 @@ export default function MainNavigation() {
     setIsNavVisible((prev) => !prev);
   };
 
+  const closeNav = () => {
+    setIsNavVisible(false);
+  };
+
   return (
     <>
       <header className={styles.header}>
         <Link href="/" legacyBehavior>
-          <a>
+          <a onClick={closeNav}>
             <Logo />
           </a>
         </Link>
@@ -52,7 +56,7 @@ export default function MainNavigation() {
       >
         <>
           <Link href="/" legacyBehavior>
-            <a>
+            <a onClick={closeNav}>
               <Logo />
             </a>
           </Link>

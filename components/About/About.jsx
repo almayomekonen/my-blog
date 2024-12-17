@@ -7,10 +7,10 @@ export default function About() {
       <h2 className={styles.title}>
         איך בונים אתר? הכלים והטכנולוגיות שמאחורי זה
       </h2>
+      <p className={styles.description}>הכישורים שדרושים לפיתוח אתרים:</p>
       <p className={styles.description}>
-        הכישורים שדרושים לפיתוח אתרים, בצורה פשוטה וברורה:
+        Frontend | Backend | JavaScript | מסדי נתונים |
       </p>
-      <p className={styles.description}>Frontend | Backend | JavaScript</p>
 
       <div className={styles.iconWrapper}>
         <Image width={80} height={60} src="/icons/html.webp" alt="html-icon" />

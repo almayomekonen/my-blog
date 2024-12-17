@@ -97,7 +97,7 @@ export default function ContactForm() {
   if (requestStatus === "error") {
     notification = {
       status: "error",
-      title: "שגיאה!",
+      title: "אופס! נראה שיש בעיה.",
       message: requestError,
     };
   }
