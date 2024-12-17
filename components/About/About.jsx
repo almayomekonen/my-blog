@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./About.module.css";
 
 export default function About() {
+  console.log("About page");
+
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>
