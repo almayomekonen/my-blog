@@ -3,7 +3,7 @@ title: שליטה ב-CSS הבסיס לעיצוב אתרי אינטרנט
 excerpt: CSS (Cascading Style Sheets) היא שפת עיצוב שמוסיפה סגנון לאתרים. הבנת הבסיס שלה היא קריטית לכל מפתח אתרים.
 image: mastering-css.jpg
 isFeatured: true
-date: '2024-12-14'
+date: "2024-12-14"
 ---
 
 # מה זה CSS?
@@ -31,35 +31,39 @@ date: '2024-12-14'
 מתחילים עיצוב ב-CSS באמצעות סוגריים מסולסלים {}. הסוגריים משמשים לאגד את כל ההגדרות והסטיילים של אלמנט מסוים.
 
 לדוגמה:
+
 ```css
 h1 {
-    color: blue;
-    font-size: 36px;
+  color: blue;
+  font-size: 36px;
 }
 ```
+
 בקטע זה, כל הגדרת העיצוב עבור הכותרת <h1> (כמו הצבע והגודל) נמצאת בתוך סוגריים מסולסלים. כל הגדרה בתוך הסוגריים נפרדת עם נקודה-פסיק (;).
 
 ## עיצוב כותרות
+
 כמו שלמדנו קודם, יש לנו כותרות ב-HTML שמתחילות ב-<h1> ועד h6>. עכשיו נעצב את הכותרות כך שהן יהיו בולטות ונראות יותר טוב בעיניים.
 
 ```css
 h1 {
-    font-size: 36px;
-    color: #2c3e50;
-    text-align: center;
+  font-size: 36px;
+  color: #2c3e50;
+  text-align: center;
 }
 
 h2 {
-    font-size: 28px;
-    color: #34495e;
-    margin-top: 15px;
+  font-size: 28px;
+  color: #34495e;
+  margin-top: 15px;
 }
 
 h3 {
-    font-size: 22px;
-    color: #16a085;
+  font-size: 22px;
+  color: #16a085;
 }
 ```
+
 במקרה הזה, אנחנו עיצבנו את הכותרות כך:
 
 הכותרת הראשית (h1) תהיה בגודל גדול ובצבע כהה.
@@ -72,14 +76,15 @@ h3 {
 
 ```css
 p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-    width: 80%;
-    margin: 20px auto;
-    text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  width: 80%;
+  margin: 20px auto;
+  text-align: justify;
 }
 ```
+
 הפסקאות שלנו:
 גודל הגופן יהיה בגודל קריא.
 המרווח בין השורות יהיה רחב יותר כדי שיהיה קל יותר לקרוא את הטקסט.
@@ -91,14 +96,14 @@ p {
 
 ```css
 a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-    color: #2980b9;
-    text-decoration: underline;
+  color: #2980b9;
+  text-decoration: underline;
 }
 ```
 
@@ -114,12 +119,13 @@ a:hover {
 
 ```css
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 ```
+
 כך עשינו:
 
 קבענו שהתמונה לא תתפוס יותר מ-100% מהגודל שלה כדי לא להיות יותר גדולה מהאזור שלה.
@@ -131,15 +137,16 @@ img {
 רשימות הן כלי מצוין להציג דברים בצורה מסודרת. נשתמש ברשימה עם נקודות (<ul>) ורשימה ממוספרת (<ol>).
 
 ```css
-ul, ol {
-    margin: 20px auto;
-    width: 80%;
-    padding-left: 20px;
+ul,
+ol {
+  margin: 20px auto;
+  width: 80%;
+  padding-left: 20px;
 }
 
 li {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 ```
 

@@ -5,6 +5,7 @@ import Hero from "../components/Home-Page/Hero";
 import FeaturedPosts from "../components/Home-Page/FeaturedPosts";
 import { getFeaturedPosts } from "../lib/posts-util";
 import Social from "../components/Social/Social";
+import About from "../components/About/About";
 
 export default function HomePage(props) {
   return (
@@ -18,6 +19,7 @@ export default function HomePage(props) {
       </Head>
       <Hero />
       <FeaturedPosts posts={props.posts} />
+      <About />
       <Social />
     </Fragment>
   );
