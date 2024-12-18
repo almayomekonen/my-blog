@@ -123,6 +123,12 @@ export default function ContactForm() {
               required
               onChange={handleInputChange}
               value={formData.email}
+              onInvalid={(event) =>
+                event.target.setCustomValidity(
+                  "הזנת מייל חשובה כדי לשלוח את הפידבק 😊"
+                )
+              }
+              onInput={(event) => event.target.setCustomValidity("")}
             />
           </div>
 
@@ -135,6 +141,12 @@ export default function ContactForm() {
               required
               onChange={handleInputChange}
               value={formData.name}
+              onInvalid={(event) =>
+                event.target.setCustomValidity(
+                  "הזנת שם מלא חשובה כדי לשלוח את הפידבק 😊"
+                )
+              }
+              onInput={(event) => event.target.setCustomValidity("")}
             />
           </div>
 
@@ -144,8 +156,15 @@ export default function ContactForm() {
               name="favoriteTopic"
               type="text"
               id="favoriteTopic"
+              required
               onChange={handleInputChange}
               value={formData.favoriteTopic}
+              onInvalid={(event) =>
+                event.target.setCustomValidity(
+                  "הזנת נושא מועדף חשובה כדי לשלוח את הפידבק 😊"
+                )
+              }
+              onInput={(event) => event.target.setCustomValidity("")}
             />
           </div>
         </div>
@@ -158,6 +177,13 @@ export default function ContactForm() {
             rows={5}
             onChange={handleInputChange}
             value={formData.message}
+            required
+            onInvalid={(event) =>
+              event.target.setCustomValidity(
+                "הזנת הודעה חשובה כדי לשלוח את הפידבק 😊"
+              )
+            }
+            onInput={(event) => event.target.setCustomValidity("")}
           />
         </div>
 
