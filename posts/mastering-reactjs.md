@@ -2,7 +2,7 @@
 title: מה זה React ולמה אנחנו צריכים אותה?
 excerpt: React היא אחת הספריות החשובות ביותר לפיתוח אתרים. במדריך הזה נסביר מה היא הספריה ולמה היא כל כך חשובה.
 image: mastering-reactjs.png
-isFeatured: false
+isFeatured: true
 date: "2021-10-30"
 ---
 

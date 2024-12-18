@@ -63,7 +63,7 @@ export default function MainNavigation() {
           <ul>
             <li>
               <Link href="/posts" onClick={toggleNav}>
-                פוסטים
+                כל המאמרים
               </Link>
             </li>
             <li>

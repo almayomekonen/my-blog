@@ -16,8 +16,8 @@ body {
   --color-grey-800: hsl(0, 0%, 0%);
   --color-grey-900: hsl(300, 20%, 33%);
 
-  --bgc-gradient-1000: #0c021c;
   --bgc-gradient-1500: hsl(258 17% 12%);
+  --bgc-gradient-1000: #0c021c;
   --bgc-gradient-2000: #110327;
   --color-primary-50: #c8b3ce;
   --color-primary-100: #c19acb;
