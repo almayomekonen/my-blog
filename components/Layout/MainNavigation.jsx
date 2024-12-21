@@ -29,6 +29,9 @@ export default function MainNavigation() {
         </div>
         <ul className={`${isNavVisible ? styles.show : ""}`}>
           <li>
+            <Link href="/chatbot">חבר טכנולוגי</Link>
+          </li>
+          <li>
             <Link href="/posts">כל המאמרים</Link>
           </li>
           <li>
@@ -61,6 +64,11 @@ export default function MainNavigation() {
             </a>
           </Link>
           <ul>
+            <li>
+              <Link href="/chatbot" onClick={toggleNav}>
+                חבר טכנולוגי
+              </Link>
+            </li>
             <li>
               <Link href="/posts" onClick={toggleNav}>
                 כל המאמרים
