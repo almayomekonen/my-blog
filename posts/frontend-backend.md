@@ -1,7 +1,7 @@
 ---
 title: מה זה פרונטאנד? (Front-End) ומה זה בקאנד? (Back-End)
 excerpt: פרונטאנד הוא צד הלקוח של האתרים, והבקאנד הוא צד השרת. במדריך הזה נסביר מה כל אחד מהם עושה ולמה הם חשובים לפיתוח אתרים.
-image: mastering-css.jpg
+image: frontend-backend.png
 isFeatured: false
 date: "2021-10-30"
 ---
