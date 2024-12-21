@@ -14,7 +14,7 @@ export default function HomePage(props) {
         <title>לומדים בכיף - הבלוג שלך לתכנות 📚</title>
         <meta
           name="description"
-          content="I post about programming and web development."
+          content="בבלוג הזה אני משתף תכנים על פיתוח אתרים ותכנות, עם דגש על פשטות וגישה מדויקת לעולם הפיתוח! 💡💻"
         />
       </Head>
       <Hero />
